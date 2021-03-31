@@ -27,8 +27,8 @@ def register_form(request, id=0):
             form = kayit_formu(request.POST, instance=kayit)
          if form.is_valid():
              form.save()
-             if form.data['kayit_turu']==2:
-                 return redirect('ogrenciliste/')
+             # if form.data['kayit_turu']==2:
+             #     return redirect('ogrenciliste/')
      return redirect('liste/')
 
 
